@@ -16,6 +16,7 @@ CONFIG_PACKAGE_TAR_BZIP2=y
 CONFIG_PACKAGE_TAR_GZIP=y
 CONFIG_PACKAGE_TAR_XZ=y
 CONFIG_PACKAGE_TAR_ZSTD=y
+CONFIG_PACKAGE_UnblockNeteaseMusic-Go=y
 CONFIG_PACKAGE_attr=y
 CONFIG_PACKAGE_autosamba=y
 CONFIG_PACKAGE_avahi-dbus-daemon=y
@@ -38,7 +39,6 @@ CONFIG_PACKAGE_ddns-scripts-services=y
 CONFIG_PACKAGE_default-settings=y
 CONFIG_PACKAGE_dns2socks=y
 CONFIG_PACKAGE_dns2tcp=y
-CONFIG_PACKAGE_frps=y
 CONFIG_PACKAGE_haproxy=y
 CONFIG_PACKAGE_ip-full=y
 CONFIG_PACKAGE_ipset=y
@@ -77,6 +77,7 @@ CONFIG_PACKAGE_libbpf=y
 CONFIG_PACKAGE_libbz2=y
 CONFIG_PACKAGE_libcap-bin=y
 CONFIG_PACKAGE_libcap-bin-capsh-shell="/bin/sh"
+CONFIG_PACKAGE_libcap-ng=y
 CONFIG_PACKAGE_libcares=y
 CONFIG_PACKAGE_libdaemon=y
 CONFIG_PACKAGE_libdb47=y
@@ -90,7 +91,9 @@ CONFIG_PACKAGE_libltdl=y
 CONFIG_PACKAGE_liblua5.3=y
 CONFIG_PACKAGE_liblzma=y
 CONFIG_PACKAGE_libmbedtls=y
+CONFIG_PACKAGE_libminiupnpc=y
 CONFIG_PACKAGE_libmount=y
+CONFIG_PACKAGE_libnatpmp=y
 CONFIG_PACKAGE_libncurses=y
 CONFIG_PACKAGE_libnetsnmp=y
 CONFIG_PACKAGE_libpci=y
@@ -114,7 +117,6 @@ CONFIG_PACKAGE_luci-app-ddns=y
 CONFIG_PACKAGE_luci-app-diskman=y
 CONFIG_PACKAGE_luci-app-dockerman=y
 CONFIG_PACKAGE_luci-app-fileassistant=y
-CONFIG_PACKAGE_luci-app-frps=y
 CONFIG_PACKAGE_luci-app-mosdns=y
 CONFIG_PACKAGE_luci-app-netdata=y
 CONFIG_PACKAGE_luci-app-openclash=y
@@ -125,17 +127,14 @@ CONFIG_PACKAGE_luci-app-passwall_Iptables_Transparent_Proxy=y
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
 CONFIG_PACKAGE_luci-app-samba4=y
 CONFIG_PACKAGE_luci-app-socat=y
-# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ChinaDNS_NG is not set
 # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client is not set
 # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server is not set
 # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Simple_Obfs is not set
 CONFIG_PACKAGE_luci-app-store=y
-# CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Hysteria is not set
-# CONFIG_PACKAGE_luci-app-vssr_INCLUDE_ShadowsocksR_Libev_Server is not set
-# CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Trojan is not set
-# CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Xray is not set
-# CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Xray_plugin is not set
+CONFIG_PACKAGE_luci-app-unblockmusic=y
+CONFIG_PACKAGE_luci-app-upnp=y
 # CONFIG_PACKAGE_luci-app-webd_INCLUDE_WEBD_BINARY is not set
+CONFIG_PACKAGE_luci-app-zerotier=y
 CONFIG_PACKAGE_luci-compat=y
 CONFIG_PACKAGE_luci-i18n-accesscontrol-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y
@@ -143,7 +142,6 @@ CONFIG_PACKAGE_luci-i18n-autoupdate-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-base-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-ddns-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-firewall-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-frps-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-mosdns-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-netdata-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-opkg-zh-cn=y
@@ -151,10 +149,14 @@ CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-samba4-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-socat-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-unblockmusic-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-upnp-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-zerotier-zh-cn=y
 CONFIG_PACKAGE_luci-lib-ipkg=y
 CONFIG_PACKAGE_luci-lib-taskd=y
 CONFIG_PACKAGE_luci-lib-xterm=y
 CONFIG_PACKAGE_microsocks=y
+CONFIG_PACKAGE_miniupnpd=y
 CONFIG_PACKAGE_mosdns=y
 CONFIG_PACKAGE_netdata=y
 CONFIG_PACKAGE_openssh-sftp-server=y
@@ -198,6 +200,7 @@ CONFIG_PACKAGE_wsdd2=y
 CONFIG_PACKAGE_xray-core=y
 CONFIG_PACKAGE_xz=y
 CONFIG_PACKAGE_xz-utils=y
+CONFIG_PACKAGE_zerotier=y
 CONFIG_PARTED_READLINE=y
 CONFIG_SAMBA4_SERVER_AVAHI=y
 CONFIG_SAMBA4_SERVER_NETBIOS=y
